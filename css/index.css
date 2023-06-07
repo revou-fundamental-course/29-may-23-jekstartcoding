@@ -1,0 +1,321 @@
+html , body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f4f4 ;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    background-color: white;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius:5px;
+    margin: 18px 24px;
+}
+
+.nav-bar:last-child{
+    border-right: none;
+}   
+
+.nav-item {
+    padding:0.5em 2em;
+    border-right:2px solid black;
+    text-align: center;
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-item:hover{
+    background-color: lightgray;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo {
+    height:4em;
+}
+.hero {
+    padding-left: 3em;
+    padding-right: 3em;
+    box-sizing: border-box;
+    height:auto;
+    width:100%;
+    /* background-image:url(img/Wallpaper-Windows-XP.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid gray;
+    border-radius: 8px;
+    flex-direction: column;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+}
+.hero > img {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+}
+
+.slideshow {
+margin: 1em auto;
+text-align: center;
+}
+
+.slideshow-button {
+width: 2em;
+height: 2em;
+margin: 0 1em;
+font-size: xx-large;
+font-weight: bolder;
+border-radius: 50%;
+cursor: pointer;
+filter: brightness(100%);
+transition: filter 0.3s ease-in-out;
+}
+
+.slideshow-button:hover {
+filter: brightness(70%);
+}
+
+.headquarters-section {
+font-family: Arial, Helvetica, sans-serif;
+padding: 1em 3em;
+border: 1px solid gray;
+border-radius: 8px;
+margin-bottom: 1em;
+background-color: white;
+}
+
+#hq-section-text-1 {
+margin: 0.3em;
+}
+
+#hq-section-text-2 {
+margin: 0.3em;
+color: gray;
+}
+
+.wrapper {
+display: flex;
+margin-top: 2em;
+flex-wrap: wrap;
+}
+
+.headquarters-image-container {
+display:flex;
+flex-direction: column;
+align-items: center;
+margin: 0 1em;
+margin-bottom: 1em;
+}
+
+.headquarters-image-container img {
+filter:brightness(100%);
+transition: filter 0.3s ease-in-out;
+}
+
+.headquarters-image-container img:hover{
+filter: brightness(50%);
+}
+
+.headquarters-image {
+height:12em;
+width: 12em;
+border-radius: 50%;
+border:1px solid black;
+margin: 0em 2em;
+cursor: pointer;
+}
+.message-us {
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+border: 1px solid gray;
+border-radius: 8px;
+background-color: white;
+padding: 1em 3em;
+box-sizing: border-box;
+margin-bottom: 1em;
+}
+
+.form-validation{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.form-wrapper {
+border: 1px solid gray;
+border-radius: 7px;
+margin-right: 4em;
+padding: 1em 1em;
+}
+
+td {
+padding-bottom: 1em;
+}
+
+input[type="text"]{
+width: 100%;
+border: 2px solid darkgray;
+border-radius: 5px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 1em;
+box-sizing: border-box;
+}
+
+input[type="email"]{
+width: 100%;
+border: 2px solid darkgray;
+border-radius: 5px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 1em;
+box-sizing: border-box;
+}
+
+input[type="tel"]{
+width: 100%;
+border: 2px solid darkgray;
+border-radius: 5px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 1em;
+box-sizing: border-box;
+}
+
+.pesan {
+width: 100%;
+border: 2px solid darkgray;
+border-radius: 5px;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 1em;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.td-pesan {
+vertical-align: top;
+}
+
+#kirim {
+width: 100%;
+}
+
+.form-output-wrapper {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 1em 1em;
+    width: 16em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+
+footer {
+display: flex;
+border: 1px solid gray;
+border-radius: 6px;
+background-color: white;
+justify-content: right;
+font-weight: bold;
+font-family: arial;
+padding: 1em 0;
+padding-right: 3em;
+}
+
+@media only screen and (max-width:600px) {
+.header-wrapper {
+flex-direction: column;
+}
+.logo {
+margin-bottom: 1em;
+}
+.nav-bar {
+flex-direction: column;
+width: 90%;
+border-bottom: none;
+}
+.nav-item {
+border-bottom: 2px solid black;
+cursor: pointer;
+}
+.slideshow-button {
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.1em;
+    font-size:large;
+}
+#headquarters-image  {
+height: 8em;
+width: 8em;
+border-radius: 50%;
+border:1px solid black;
+margin: 0 auto;
+margin-right: 1em;
+}
+.wrapper {
+display: flex;
+flex-direction: column;
+align-content: center;
+margin: 0 auto;
+margin-top: 2em;
+}
+
+.headquarters-image-container {
+display:flex;
+flex-direction: row;
+align-items: center;
+font-size: small;
+margin-bottom: 1em;
+}
+
+.message-us {
+padding-left: 1em;
+}
+
+.form-validation {
+flex-direction: column;
+justify-content: center;
+}
+
+.form-wrapper {
+width: 100%;
+margin-right: 0;
+}
+
+.form-output-wrapper {
+width: 100%;
+margin-top: 1em;
+}
+#input-nama , #input-email , #input-tel , #input-pesan , #kirim{
+width: 100%;
+font-size: x-small;
+}
+footer {
+font-size: small;
+padding-right: 1em;
+}
+}
+@media only screen and (min-width:600px) {
+.wrapper {
+justify-content: center;
+flex-wrap: wrap;
+}
+}

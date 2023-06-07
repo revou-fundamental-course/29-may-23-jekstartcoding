@@ -4,9 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <header class="header-wrapper">
+        <img src="img/Logo RevoU.webp" class="logo">
+        <div class="nav-bar">  
+          <a href="index.html"><div class="nav-item" name="home">Home</div></a>
+          <a href="profile.html"> <div class="nav-item" name="Our-Profile">Our Profile</div></a>
+          <a href="#message-us-section"><div class="nav-item" name="Message-Us">Message Us</div></a>
+      </div>
+      </header>
+      <div class="hero" id="hero-section">
+          <h1>Hi <span id="nama"></span>, welcome to the website!</h1>
+          <p>ini adalah website latihan pertama</p>
+          <img 
+          class="img-slideshow" 
+          src="img/Microsoft-Banner-1.png"
+          />
+          <img 
+          class="img-slideshow" 
+          src="img/Microsoft-Office-Banner.png"
+          />
+          <img 
+          class="img-slideshow" 
+          src="img/Windows-Banner.png"
+          />
+          <img 
+          class="img-slideshow" 
+          src="img/xbox-banner.png"
+          />
+          <div class="slideshow">
+          <button onclick="plusDivs(-1)" class="slideshow-button"><</button>
+          <button onclick="plusDivs(1)" class="slideshow-button">></button>
+          </div>
+      </div>
+
+      <div class="headquarters-section">
+          <h2 id="hq-section-text-1">Our Headquarters </h2>
+          <p id="hq-section-text-2">(tap/click an image to view in the Google Maps)</p>
+          <div class="wrapper">
+              <div class="headquarters-image-container">
+                  <a href="https://goo.gl/maps/HrG6gXgobUJqvkea7" target="_blank">
+                  <img src="img/Microsoft-HQ-Germany.jpg" class="headquarters-image" id="headquarters-image">
+                  </a>
+                  <p>Munich, Germany</p>
+              </div>
+           <div class="headquarters-image-container">
+              <a href="https://goo.gl/maps/XWPmgJiDq3WFvm1t9" target="_blank">
+              <img src="img/Microsoft-HQ-Jakarta.jpg" class="headquarters-image" id="headquarters-image">
+              </a>
+                <p>Jakarta, Indonesia</p>
+           </div>
+           <div class="headquarters-image-container">
+              <a href="https://goo.gl/maps/3HpGmjb4uwdapbmW8" target="_blank">
+              <img src="img/Microsoft-HQ-USA.jpg" class="headquarters-image" id="headquarters-image">
+              </a>
+              <p>Washington, USA</p>
+          </div>
+          </div>
+      </div>
+      <div id="message-us-section" class="message-us">
+          <h2>Message Us</h2>
+          <div class="form-validation" id="form-validation">
+           <div class="form-wrapper" id="form-wrapper">
+            <form class="message-form" name="message-form" onsubmit="return validateform()">
+              <table>
+                  <tr>
+                      <div class="tablerow">
+                      <td>Nama</td>
+                      <td>:</td>
+                      <td><input type="text" name="full-name" id="input-nama" placeholder="Nama" required> </td>
+                  </div>
+                  </tr>
+                  <tr>
+                      <td>Email</td>
+                      <td>:</td>
+                      <td><input type="email" name="email" id="input-email" placeholder="youraddress@gmail.com" required></td>
+                  </tr>
+                  <tr>
+                      <td style="white-space: nowrap;">No. Telepon&nbsp;</td>
+                      <td>:&nbsp;&nbsp;</td>
+                      <td><input type="tel" name="phone" pattern="[0-9]{10,13}" id="input-tel" placeholder="08987654321" required> </td>
+                  </tr>
+                  <tr>
+                      <td class="td-pesan">Pesan</td>
+                      <td class="td-pesan">:</td>
+                      <td><textarea class="pesan" id="input-pesan" placeholder="pesan" name="messages" required></textarea> </td>
+                  </tr>
+              </table>
+              <input type="submit" value="kirim" id="kirim">
+            </form>
+       </div>
+       <div class="form-output-wrapper" id="form-output">
+          <table>
+              <tr>
+                  <td><b>Current time</b>&nbsp;</td>
+                  <td>:</td>
+                  <td><p id="current-date"></p></td>
+              </tr>
+              <tr>
+                  <td><b>Nama</b></td>
+                  <td>:</td>
+                  <td><span id="sender-full-name"></span> </td>
+              </tr>
+              <tr>
+                  <td><b>Email</b></td>
+                  <td>:</td>
+                  <td><span id="sender-email"></span></td>
+              </tr>
+              <tr>
+                  <td><b>No. Telepon&nbsp;</b></td>
+                  <td>:&nbsp;&nbsp;</td>
+                  <td><span id="sender-phone"></span></td>
+              </tr>
+              <tr>
+                  <td class="td-pesan"><b>Pesan</b></td>
+                  <td class="td-pesan">:</td>
+                  <td><span id="sender-messages"></span></td>
+              </tr>
+          </table>
+       </div>
+      </div>
+      </div>
+      <footer>
+          <p>Created by Muhammad Zaky Aliyashfi</p>
+      </footer>
+<script src="js/script.js" rel="javascript"></script> 
 </body>
 </html>
